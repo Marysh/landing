@@ -1,0 +1,67 @@
+.meet-our-team {
+  padding-top: 120px;
+  padding-bottom: 100px;
+
+  h2 {
+    text-transform: capitalize;
+    color: $brown-gray;
+  }
+  .team {
+    background-color: #dae9e6;
+    &:hover {
+      cursor: pointer;
+      background-color: $gray-dark;
+      .info {
+        background-color: $active-color;
+      }
+      .person_responsive {
+        color: white !important;
+      }
+    }
+  }
+  .people_picture {
+    min-height: 228px;
+  }
+
+    .info {
+      background-color: #2e4a5b;
+      min-height: 142px;
+
+      .person {
+        min-height: 74px;
+        &_name {
+          color: white;
+          text-transform: capitalize;
+          font-size: 16px;
+          font-weight: bold;
+          padding: 20px 0 0 24px;
+        }
+        &_responsive {
+          color: $active-color;
+          font-size: 13px;
+          font-weight: lighter;
+          text-transform: capitalize;
+          padding: 14px 0 20px 24px;
+        }
+      }
+
+      .links {
+        min-height: 65px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        .link {
+          width: 25%;
+          border-top: 1px solid $white;
+          border-right: 1px solid $white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+    }
+
+}

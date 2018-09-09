@@ -1,0 +1,53 @@
+.our-services {
+  padding: 120px 0 100px 0;
+  @media (max-width: 992px) {
+    padding: 70px 0 50px 0;
+  }
+
+  h2 {
+    text-transform: capitalize;
+    color: $brown-gray;
+  }
+
+  .tab {
+    margin-bottom: 26px;
+    flex-wrap: nowrap;
+    @media (max-width: 992px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .tablinks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 72px;
+      width: 16.666%;
+      text-transform: capitalize;
+      border: 1px solid #ebebeb;
+      background-color: $milk-white;
+      text-align: center;
+      padding: 20px 15px;
+      @media (max-width: 576px) {
+        width: 33.333%;
+        padding: 14px 10px;
+        min-height: 50px;
+        margin-bottom: 10px;
+      }
+      &:hover {
+        background-color: $active-color;
+        color: $white;
+      }
+    }
+
+  }
+  .description {
+    text-align: justify;
+    padding: 0 12px 0 30px;
+    line-height: 20px;
+    color: $gray-light;
+    font-size: 13px;
+
+  }
+
+}

@@ -1,0 +1,87 @@
+.first-screen {
+  background-color: $gray;
+  min-height: 100vh;
+  padding-top: 120px;
+  @media (max-width: 992px) {
+    padding-top: 70px;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 74px;
+    font-weight: bold;
+    @media (max-width: 992px) {
+      font-size: 32px;
+    }
+  }
+  .top-screen {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 30px;
+    @media (max-width: 992px) {
+      font-size: 18px;
+    }
+  }
+  .bottom-screen {
+    text-transform: capitalize;
+    color: #d4d4d4;
+    font-size: 29px;
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+
+  .buttons {
+    font-size: 0;
+    .btn {
+      margin: 0 15px;
+      @media (max-width: 992px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.company-features {
+  width: 100%;
+  @media (max-width: 992px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box {
+    padding: 230px 15px 60px 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 4px solid $active-color;
+    color: $active-color;
+
+    background-color: $dark-blue;
+    background-repeat: no-repeat;
+    background-position: center 110px;
+    &:nth-child(even) {
+      background-color: $active-color;
+      border-color: $white;
+      color: $white;
+    }
+    &:nth-child(1) {
+      background-image: url($img-path + "feature-1.png");
+    }
+    &:nth-child(2) {
+      background-image: url($img-path + "feature-2.png");
+    }
+    &:nth-child(3) {
+      background-image: url($img-path + "feature-3.png");
+    }
+    &:nth-child(4) {
+      background-image: url($img-path + "feature-4.png");
+    }
+    @media (max-width: 992px) {
+      padding: 230px 15px 60px 15px;
+      font-size: 16px;
+    }
+  }
+}
+
+//$img-path: "../img/";

@@ -1,0 +1,39 @@
+.what-people-say {
+  width: 100%;
+  background-color: #2e404d;
+  padding: 120px 0 100px 0;
+  @media (max-width: 992px) {
+    padding: 50px 0;
+  }
+
+  h2 {
+    color: $white;
+  }
+  .comma {
+    align-items: center;
+    margin-bottom: 45px;
+  }
+  .response {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #6a7278;
+    text-align: center;
+  }
+  .name {
+    text-transform: uppercase;
+    color: $active-color;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 0 6px 0;
+  }
+  .position {
+    color: $white;
+    font-size: 13px;
+    font-weight: lighter;
+    margin-bottom: 26px;
+  }
+  .photo {
+    margin-bottom: 54px;
+  }
+}

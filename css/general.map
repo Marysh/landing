@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"file": "../scss/general.css",
+	"sources": [
+		"../scss/general.scss",
+		"../scss/_base.scss",
+		"../scss/_variables.scss",
+		"../scss/_header.scss",
+		"../scss/_first-screen.scss",
+		"../scss/_footer.scss"
+	],
+	"sourcesContent": [
+		"@import \"base\";\r\n@import \"variables\";\r\n@import \"header\";\r\n@import \"first-screen\";\r\n@import \"footer\";\r\n\r\n\r\n\r\n\r\n",
+		"html,body {\r\n  font-family: 'Montserrat', sans-serif;\r\n}",
+		"$gray-dark: #717171;\r\n$gray-light: #777777;\r\n$white: #ffffff;\r\n$active-color: #18cfab;\r\n$dark-blue: #1c2a33;",
+		"header {\r\n  background-color: rgba(39, 39, 37, 0.8);\r\n  position: fixed;\r\n  width: 100%;\r\n  .set-height {\r\n    height: 120px;\r\n  }\r\n  .nav {\r\n    font-size: 13px;\r\n    font-weight: bold;\r\n    color: #b8b8b8;\r\n    text-transform: uppercase;\r\n    ul {\r\n      margin: 0;\r\n      padding: 0;\r\n      list-style: none;\r\n    }\r\n    li {\r\n      margin: 0 15px 0 0;\r\n      padding: 0;\r\n      &:last-child {\r\n        margin-right: 0;\r\n      }\r\n      &:hover {\r\n        cursor: pointer;\r\n      }\r\n      &.active {\r\n        color: $active-color;\r\n        position: relative;\r\n        &:after {\r\n          content: \"\";\r\n          position: absolute;\r\n          z-index: 2;\r\n          left: 0;\r\n          right: 0;\r\n          bottom: -52px;\r\n          height: 2px;\r\n          background-color: $active-color;\r\n          display: block;\r\n\r\n        }\r\n      }\r\n    }\r\n\r\n  }\r\n\r\n}\r\n\r\n\r\n\r\n\r\n",
+		".first-screen {\r\n  background-color: $gray-dark;\r\n  min-height: 100vh;\r\n  padding-top: 120px;\r\n}\r\n\r\nh1 {\r\n  text-transform: uppercase;\r\n  color: $white;\r\n  font-size: 74px;\r\n  font-weight: bold;\r\n}\r\n.top {\r\n  \r\n}",
+		""
+	],
+	"mappings": ";ACAA,AAAA,IAAI,EAAC,AAAA,IAAI,CAAC;EACR,WAAW,EAAE,wBAAyB;CACvC;;;AEFD,AAAA,MAAM,CAAC;EACL,gBAAgB,EAAE,qBAAI;EACtB,QAAQ,EAAE,KAAM;EAChB,KAAK,EAAE,IAAK;CA2Cb;;;AA9CD,AAIE,MAJI,CAIJ,WAAW,CAAC;EACV,MAAM,EAAE,KAAM;CACf;;;AANH,AAOE,MAPI,CAOJ,IAAI,CAAC;EACH,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,IAAK;EAClB,KAAK,EAAE,OAAQ;EACf,cAAc,EAAE,SAAU;CAiC3B;;;AA5CH,AAYI,MAZE,CAOJ,IAAI,CAKF,EAAE,CAAC;EACD,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,UAAU,EAAE,IAAK;CAClB;;;AAhBL,AAiBI,MAjBE,CAOJ,IAAI,CAUF,EAAE,CAAC;EACD,MAAM,EAAE,UAAW;EACnB,OAAO,EAAE,CAAE;CAuBZ;;;AA1CL,AAiBI,MAjBE,CAOJ,IAAI,CAUF,EAAE,AAGC,WAAW,CAAC;EACX,YAAY,EAAE,CAAE;CACjB;;;AAtBP,AAiBI,MAjBE,CAOJ,IAAI,CAUF,EAAE,AAMC,MAAM,CAAC;EACN,MAAM,EAAE,OAAQ;CACjB;;;AAzBP,AAiBI,MAjBE,CAOJ,IAAI,CAUF,EAAE,AASC,OAAO,CAAC;EACP,KAAK,EDxBE,OAAO;ECyBd,QAAQ,EAAE,QAAS;CAapB;;;AAzCP,AAiBI,MAjBE,CAOJ,IAAI,CAUF,EAAE,AASC,OAAO,AAGL,MAAM,CAAC;EACN,OAAO,EAAE,EAAG;EACZ,QAAQ,EAAE,QAAS;EACnB,OAAO,EAAE,CAAE;EACX,IAAI,EAAE,CAAE;EACR,KAAK,EAAE,CAAE;EACT,MAAM,EAAE,KAAM;EACd,MAAM,EAAE,GAAI;EACZ,gBAAgB,EDlCX,OAAO;ECmCZ,OAAO,EAAE,KAAM;CAEhB;;;ACxCT,AAAA,aAAa,CAAC;EACZ,gBAAgB,EFDN,OAAO;EEEjB,UAAU,EAAE,KAAM;EAClB,WAAW,EAAE,KAAM;CACpB;;;AAED,AAAA,EAAE,CAAC;EACD,cAAc,EAAE,SAAU;EAC1B,KAAK,EFNC,OAAO;EEOb,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,IAAK;CACnB",
+	"names": []
+}

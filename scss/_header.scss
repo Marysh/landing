@@ -1,0 +1,55 @@
+.hdr { // .header
+  background-color: rgba(39, 39, 37, 0.8);
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .set-height {
+    height: 120px;
+    @media (max-width: 992px) {
+      height: 70px;
+      .hidden-md {
+        display: none;
+      }
+    }
+  }
+  &_nav {
+
+    &_item {
+      margin: 0 15px 0 0;
+      padding: 0;
+      color: #b8b8b8;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        cursor: pointer;
+        color: $active-color;
+        text-decoration: none;
+      }
+      &.active {
+        color: $active-color;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          z-index: 2;
+          left: 0;
+          right: 0;
+          bottom: -52px;
+          height: 2px;
+          background-color: $active-color;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+

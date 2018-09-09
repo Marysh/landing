@@ -1,0 +1,77 @@
+.about-our-company {
+  background-color: $black-blue;
+  width: 100%;
+  padding: 120px 0 100px 0;
+  @media (max-width: 992px) {
+    padding: 70px 0 50px 0;
+  }
+  h2 {
+    color: $white;
+    text-transform: capitalize;
+  }
+}
+
+.company {
+  &_tabs {
+    &-captions {
+      padding-left: 15px;
+      margin-bottom: 70px;
+      .caption {
+        float: left;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $white;
+        cursor: pointer;
+        border-top: 3px solid transparent;
+        &.current {
+          color: $active-color;
+          border-color: $active-color;
+        }
+        &:not(:last-child) {
+          margin-right: 28px;
+        }
+      }
+    }
+
+    &_content {
+      display: none;
+      color: #aeaeae;
+      p {
+        margin-bottom: 50px;
+      }
+      &.current {
+        display: inherit;
+      }
+      &_pseudodiagram {
+        width: 100%;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $white;
+      }
+      ul {
+        li {
+          font-size: 14px;
+          font-weight: lighter;
+          text-transform: capitalize;
+          color: #aeaeae;
+          margin-bottom: 10px;
+          list-style: url($img-path +"bird-design.png");
+        }
+      }
+    }
+
+  }
+
+  .dia {
+    height: 40px;
+    border: 1px solid #959595;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+    color: $white;
+  }
+}
+

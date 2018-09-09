@@ -1,0 +1,43 @@
+.creative-design {
+  background-color: #233641;
+  background-image: url($img-path + "lap-top-design.png");
+  background-repeat: no-repeat;
+  background-position: left 440px;
+  width: 100%;
+  padding-top: 128px;
+  padding-bottom: 215px;
+
+  .design-title {
+    margin-bottom: 110px;
+    p {
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+      font-size: 46px;
+      font-weight: bold;
+
+      span {
+        color: $active-color;
+        font-size: 40px;
+        font-weight: normal;
+
+      }
+    }
+  }
+
+  ul {
+    margin-bottom: 70px;
+    li {
+      font-size: 14px;
+      font-weight: lighter;
+      text-transform: capitalize;
+      color: $white;
+      margin-bottom: 10px;
+      list-style: url($img-path +"bird-design.png");
+    }
+  }
+
+  .btn {
+    margin-left: 10px;
+  }
+}
