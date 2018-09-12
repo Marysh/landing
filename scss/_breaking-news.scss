@@ -83,66 +83,68 @@
 
   }
 }
-  .fun-fact {
-    width: 100%;
-    background-color: #25333c;
-    @media (max-width: 992px) {
-      flex-wrap: wrap;
-    }
 
-    .box {
-      position: relative;
-      border-top: 7px solid $active-color;
-      background-repeat: no-repeat;
-      background-position: center 60px;
-      &:nth-child(even) {
-        background-color: $active-color;
-        border-top: 7px solid #25333c;
-      }
-      &:nth-child(1) {
-        background-image: url($img-path + "fun-bag.png");
-      }
-      &:nth-child(2) {
-        background-image: url($img-path + "fun-user.png");
-      }
-      &:nth-child(3) {
-        background-image: url($img-path + "fun-basket.png");
-      }
-      &:nth-child(4) {
-        background-image: url($img-path + "fun-place.png");
+.fun-fact {
+  width: 100%;
+  background-color: #25333c;
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    position: relative;
+    border-top: 7px solid $active-color;
+    background-repeat: no-repeat;
+    background-position: center 60px;
+    &:nth-child(even) {
+      background-color: $active-color;
+      border-top: 7px solid #25333c;
+      .facts {
+        color: #25333c;
       }
     }
-
+    &:nth-child(odd) {
+      color: $active-color;
+    }
+    &:nth-child(1) {
+      background-image: url($img-path + "fun-bag.png");
+    }
+    &:nth-child(2) {
+      background-image: url($img-path + "fun-user.png");
+    }
+    &:nth-child(3) {
+      background-image: url($img-path + "fun-basket.png");
+    }
+    &:nth-child(4) {
+      background-image: url($img-path + "fun-place.png");
+    }
     .quantity {
       position: absolute;
       bottom: 0;
       text-align: center;
+    }
 
-      .number {
-        color: $white;
-        margin-bottom: 22px;
-        font-size: 36px;
-        text-align: center;
-        @media (max-width: 992px) {
-          font-size: 25px;
-        }
+    .number {
+      color: $white;
+      margin-bottom: 20px;
+      font-size: 36px;
+      text-align: center;
+      @media (max-width: 992px) {
+        font-size: 25px;
       }
+    }
 
-      .facts {
-        font-size: 18px;
-        font-weight: lighter;
-        @media (max-width: 992px) {
-          font-size: 14px;
-        }
-        &:nth-child(even) {
-          color: #25333c;
-        }
-        &:nth-child(odd) {
-          color: $active-color;
-        }
+    .facts {
+      font-size: 18px;
+      font-weight: lighter;
+      margin-bottom: 5px;
+      @media (max-width: 992px) {
+        font-size: 14px;
       }
     }
   }
+
+}
 
 
 
