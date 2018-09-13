@@ -817,6 +817,12 @@ hr {
   padding: 0;
 }
 
+@media (max-width: 920px) {
+  .pricing_column {
+    width: 50%;
+  }
+}
+
 .pricing_column:hover {
   cursor: pointer;
   box-shadow: 0px 0px 10px 4px #e7a61a;
