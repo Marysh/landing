@@ -1,6 +1,9 @@
 .meet-our-team {
   padding-top: 120px;
   padding-bottom: 100px;
+  @media (max-width: 992px) {
+    padding: 50px 0 50px 0;
+  }
 
   h2 {
     text-transform: capitalize;
