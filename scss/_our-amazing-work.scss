@@ -41,7 +41,7 @@
     .work {
       height: 208px;
       width: 25%;
-      background-color: #24413e;
+      overflow: hidden;
 
       @media (max-width: 992px) {
         height: 150px;
@@ -58,6 +58,7 @@
         border-top: 3px solid $active-color;
       }
     }
+
   }
   .btn-work {
     text-transform: uppercase;

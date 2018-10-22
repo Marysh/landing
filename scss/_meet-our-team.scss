@@ -24,6 +24,7 @@
   }
   .people_picture {
     min-height: 228px;
+    overflow: hidden;
   }
 
     .info {
@@ -62,6 +63,9 @@
           align-items: center;
           &:last-child {
             border-right: none;
+          }
+          &:hover {
+            background-color: #233641;
           }
         }
       }

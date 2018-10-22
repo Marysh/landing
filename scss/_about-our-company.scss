@@ -68,10 +68,13 @@
     border: 1px solid #959595;
     border-radius: 4px;
     margin-bottom: 15px;
+    color: $white;
+  }
+  .dia-bg {
+    height: 100%;
     padding-left: 18px;
     display: flex;
     align-items: center;
-    color: $white;
   }
 }
 

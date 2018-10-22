@@ -21,22 +21,22 @@
 			</div>
 			<div class="col-9 d-flex justify-content-end ">
 				<nav class="hdr_nav hidden-md">
-					<a class="hdr_nav_item active" href="#0">Home</a>
+					<a class="hdr_nav_item active" href="#home">Home</a>
 					<a class="hdr_nav_item" href="#about-us">About</a>
 					<a class="hdr_nav_item" href="#0">Skills</a>
-					<a class="hdr_nav_item" href="#0">Service</a>
-					<a class="hdr_nav_item" href="#0">Work</a>
+					<a class="hdr_nav_item" href="#service">Service</a>
+					<a class="hdr_nav_item" href="#work">Work</a>
 					<a class="hdr_nav_item" href="#0">Testimonial</a>
-					<a class="hdr_nav_item" href="#0">Blog</a>
-					<a class="hdr_nav_item" href="#0">Team</a>
-					<a class="hdr_nav_item" href="#0">Contact</a>
+					<a class="hdr_nav_item" href="#blog">Blog</a>
+					<a class="hdr_nav_item" href="#team">Team</a>
+					<a class="hdr_nav_item" href="#contact">Contact</a>
 				</nav>
 			</div>
 		</div>
 	</div>
 </header>
 
-<section class="first-screen d-flex align-items-center">
+<section id="home" class="first-screen d-flex align-items-center">
 	<div class="container">
 		<div class="row d-flex justify-content-center">
 			<div class="col-8 text-center">
@@ -180,7 +180,7 @@
 					</div>
 				</div>
 			</div>
-
+		
 		</div>
 	</div>
 
@@ -201,8 +201,10 @@
 						<div class="caption" data-tab="tab-3">Our skills</div>
 					</div>
 					<div class="company_tabs-contents">
-						<div id="tab-1" class="company_tabs_content current"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
-							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div id="tab-1" class="company_tabs_content current"><p>Lorem ipsum dolor sit amet, consectetur
+							adipisicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+							anim id est laborum.</p>
 							<div class="row">
 								<div class="col-6">
 									<ul>
@@ -222,24 +224,41 @@
 								</div>
 							</div>
 						</div>
-						<div id="tab-2" class="company_tabs_content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum Suspendisse cursus malesuada facilisis. Nunc con sectetur odio sed dolor tincidunt porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibu lum nec odio ipsum. Sus pendisse cursus malesua da facilisis. Vestibulum nec odio ipsum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum Suspendisse cursus malesuada facilisis. Nunc con sectetur odio sed dolor tincidunt porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+						<div id="tab-2" class="company_tabs_content"><p>Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit. Vestibulum nec odio ipsum Suspendisse cursus malesuada facilisis. Nunc con
+							sectetur odio sed dolor tincidunt porttitor. Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit. Vestibu lum nec odio ipsum. Sus pendisse cursus malesua da facilisis.
+							Vestibulum nec odio ipsum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum
+								Suspendisse cursus malesuada facilisis. Nunc con sectetur odio sed dolor tincidunt
+								porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
 						<div id="tab-3" class="company_tabs_content company_pseudodiagram">
-								<div class="dia" style="background: #9c5da5; ">User interface</div>
-								<div class="sky-blue dia" style="background-color:  #11b0de">Web design</div>
-								<div class="peach dia" style="background-color: #d67f7f">Wordpress</div>
-								<div class="grass-green dia" style="background-color: #20bc9d">Html & css</div>
-								<div class="mustard-yellow dia" style="background-color: #bb8a36">App design</div>
-						</div>
+							<div class="dia">
+								<div class="dia-bg" style="background: #9c5da5; width: 70%">User interface</div>
+							</div>
+							<div class="sky-blue dia">
+								<div class="dia-bg" style="background-color: #11b0de; width: 85%">Web design</div>
+							</div>
+							<div class="peach dia">
+								<div class="dia-bg" style="background-color: #d67f7f; width: 60%">Wordpress</div>
+							</div>
+							<div class="grass-green dia">
+								<div class="dia-bg" style="background-color: #20bc9d; width: 95%">Html & css</div>
+							</div>
+							<div class="mustard-yellow dia">
+								<div class="dia-bg" style="background-color: #bb8a36; width: 90%">App design</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				
 			</div>
+		
 		</div>
+	</div>
 	</div>
 </section>
 
-<section class="our-amazing-work">
+<section id="work" class="our-amazing-work">
 	<div class="container">
 		<div class="amazing-work_title">
 			<h2>Our amazing work</h2>
@@ -253,27 +272,49 @@
 			<button class="tablinks" onclick="openLink(event, 'Wordpress')">Wordpress</button>
 		</div>
 		<div class="works d-flex flex-wrap">
-			<div class="work"></div>
-			<div class="work"></div>
-			<div class="work"></div>
-			<div class="work"></div>
-			<div class="work"></div>
-			<div class="work"></div>
-			<div class="work"></div>
-			<div class="work"></div>
-			<div class="work"></div>
-			<div class="work"></div>
-			<div class="work"></div>
-			<div class="work"></div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
+			<div class="work">
+				<img src="./img/creative_design.png" alt="">
+			</div>
 		</div>
 		<div class="d-flex justify-content-center">
 			<div class="btn btn-work">Load more</div>
 		</div>
-	</div>
-
 </section>
 
-<section class="our-services">
+<section id="service" class="our-services">
 	<div class="container">
 		<h2>Our services</h2>
 		<hr>
@@ -315,13 +356,14 @@
 </section>
 
 
-<section class="breaking-news">
+<section id="blog" class="breaking-news">
 	<div class="container">
 		<h2>Breaking news</h2>
 		<hr>
 		<div class="row news_line">
 			<div class="col-lg-3 col-6 news_post">
 				<div class="news_post_box">
+					<img src="./img/blog.jpg" alt="">
 					<div class="news_post_box_date">12<br>Feb</div>
 				</div>
 				<div class="news_post-description">
@@ -334,6 +376,7 @@
 			</div>
 			<div class="col-lg-3 col-6 news_post">
 				<div class="news_post_box">
+					<img src="./img/blog1.jpg" alt="">
 					<div class="news_post_box_date">12<br>Feb</div>
 				</div>
 				<div class="news_post-description">
@@ -346,6 +389,7 @@
 			</div>
 			<div class="col-lg-3 col-6 news_post">
 				<div class="news_post_box">
+					<img src="./img/blog2.jpg" alt="">
 					<div class="news_post_box_date">12<br>Feb</div>
 				</div>
 				<div class="news_post-description">
@@ -358,6 +402,7 @@
 			</div>
 			<div class="col-lg-3 col-6 news_post">
 				<div class="news_post_box">
+					<img src="./img/blog3.jpg" alt="">
 					<div class="news_post_box_date">12<br>Feb</div>
 				</div>
 				<div class="news_post-description">
@@ -370,6 +415,7 @@
 			</div>
 			<div class="col-lg-3 col-6 news_post">
 				<div class="news_post_box">
+					<img src="./img/blog2.jpg" alt="">
 					<div class="news_post_box_date">12<br>Feb</div>
 				</div>
 				<div class="news_post-description">
@@ -382,6 +428,7 @@
 			</div>
 			<div class="col-lg-3 col-6 news_post">
 				<div class="news_post_box">
+					<img src="./img/blog.jpg" alt="">
 					<div class="news_post_box_date">12<br>Feb</div>
 				</div>
 				<div class="news_post-description">
@@ -394,6 +441,7 @@
 			</div>
 			<div class="col-lg-3 col-6 news_post">
 				<div class="news_post_box">
+					<img src="./img/blog3.jpg" alt="">
 					<div class="news_post_box_date">12<br>Feb</div>
 				</div>
 				<div class="news_post-description">
@@ -406,6 +454,7 @@
 			</div>
 			<div class="col-lg-3 col-6 news_post">
 				<div class="news_post_box">
+					<img src="./img/blog1.jpg" alt="">
 					<div class="news_post_box_date">12<br>Feb</div>
 				</div>
 				<div class="news_post-description">
@@ -451,7 +500,7 @@
 		<h2>Our prising table</h2>
 		<hr>
 		<div class="row pricing">
-			<div class="col-12 col-lg-6">
+			<div class="col-12">
 				<div class="pricing-table d-flex flex-wrap">
 					<ul class="pricing_column">
 						<li class="pricing_title">Personal</li>
@@ -522,7 +571,7 @@
 			<div class="col-12">
 				<h2>What people say about the Ham</h2>
 				<hr>
-				<div class="comma d-flex justify-content-center">
+				<div class="sign d-flex justify-content-center">
 					<img src="./img/koma.png" alt="">
 				</div>
 				<div class="response">
@@ -534,7 +583,10 @@
 				<div class="employee d-flex flex-column">
 					<div class="name d-flex justify-content-center">Hasan Ali</div>
 					<div class="position d-flex justify-content-center">UX Designer</div>
-					<div class="photo d-flex justify-content-center"><img src="./img/photo-od-employee.png" alt="">
+					<div class="d-flex justify-content-center">
+						<div class="photo d-flex justify-content-center">
+							<img src="http://via.placeholder.com/170x170" alt="portrait">
+						</div>
 					</div>
 				</div>
 			
@@ -544,14 +596,16 @@
 </section>
 
 
-<section class="meet-our-team">
+<section id="team" class="meet-our-team">
 	<div class="container">
 		<h2>Meet our team</h2>
 		<hr>
 		<div class="row">
 			<div class="col-lg-3 col-xs-6">
 				<div class="team">
-					<div class="people_picture"></div>
+					<div class="people_picture">
+						<img src="./img/teem.png" alt="">
+					</div>
 					<div class="info">
 						<div class="person">
 							<div class="person_name">Mis liza</div>
@@ -568,7 +622,9 @@
 			</div>
 			<div class="col-lg-3 col-xs-6">
 				<div class="team">
-					<div class="people_picture"></div>
+					<div class="people_picture">
+						<img src="./img/teem.png" alt="">
+					</div>
 					<div class="info">
 						<div class="person">
 							<div class="person_name">Mis Liza</div>
@@ -585,7 +641,9 @@
 			</div>
 			<div class="col-lg-3 col-xs-6">
 				<div class="team">
-					<div class="people_picture"></div>
+					<div class="people_picture">
+						<img src="./img/teem.png" alt="">
+					</div>
 					<div class="info">
 						<div class="person">
 							<div class="person_name">Mis Liza</div>
@@ -602,7 +660,9 @@
 			</div>
 			<div class="col-lg-3 col-xs-6">
 				<div class="team">
-					<div class="people_picture"></div>
+					<div class="people_picture">
+						<img src="./img/teem.png" alt="">
+					</div>
 					<div class="info">
 						<div class="person">
 							<div class="person_name">Mis Liza</div>
@@ -651,19 +711,19 @@
 
 <section class="keep-in-touch">
 	<div class="container">
+		<div class="contact_title">
+			<h2>Keep in touch</h2>
+			<hr>
+		</div>
 		<div class="row">
-			<div class="col-6 contact-info">
+			<div class="col-12 col-md-6 contact-info">
 				<div class="map">
 					<iframe src="https://www.google.com/maps/embed?pb" width="1000" height="530" frameborder="0"
 					        style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
-			<div class="col-6 contact-info">
+			<div class="col-12 col-md-6 contact-info">
 				<div class="contact">
-					<div class="contact_title">
-						<h2>Keep in touch</h2>
-						<hr>
-					</div>
 					<form action="input1.php">
 						<input type="text" placeholder="Name">
 						<input type="text" placeholder="Email">
@@ -678,10 +738,10 @@
 	</div>
 </section>
 
-<section class="footer">
+<section id="contact" class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col col-3">
+			<div class="col col-12 col-md-3">
 				<div class="footer-ham">the<span>Ham</span></div>
 				<div class="content"><p>Lorem ipsum dolor sit amet, con is sectetur adipiscing elit. Duis ut lob ortis
 					nulla. Vestibulum ante ipsum primis itrices posuere cubilia.</p></div>
@@ -690,10 +750,10 @@
 				</div>
 				<div class="phone">Phone: (91) 8547 632521<br>Fax: (91) 11 4752 1433<br>Email: info@canvas.com</div>
 			</div>
-			<div class="col col-4">
+			<div class="col col-md-4 col-8">
 				<h3>Recent post</h3>
 				<div class="posts">
-					<div class="img-post"><img src="./img/box.png" alt=""></div>
+					<div class="img-post"><img src="./img/footer.png" alt=""></div>
 					<div class="post">
 						<div class="post_title active">A standard image post</div>
 						<div class="post_content"><p>Lorem ipsum dolor sit amet, con sectetur adip is lisicing elit, sed
@@ -702,7 +762,7 @@
 					</div>
 				</div>
 				<div class="posts">
-					<div class="img-post"><img src="./img/box.png" alt=""></div>
+					<div class="img-post"><img src="./img/footer.png" alt=""></div>
 					<div class="post">
 						<div class="post_title">A standard image post</div>
 						<div class="post_content"><p>Lorem ipsum dolor sit amet, con sectetur adip is lisicing elit, sed
@@ -711,7 +771,7 @@
 					</div>
 				</div>
 				<div class="posts">
-					<div class="img-post"><img src="./img/box.png" alt=""></div>
+					<div class="img-post"><img src="./img/footer.png" alt=""></div>
 					<div class="post">
 						<div class="post_title">A standard image post</div>
 						<div class="post_content"><p>Lorem ipsum dolor sit amet, con sectetur adip is lisicing elit, sed
@@ -720,41 +780,48 @@
 					</div>
 				</div>
 			</div>
-			<div class="col col-3">
+			<div class="col col-6 col-md-3">
 				<h3>Recent post</h3>
 				<div class="tags d-flex flex-wrap">
 					<div class="tag">audio</div>
 					<div class="tag">gallery</div>
 					<div class="tag">image</div>
-					
 					<div class="tag">audio</div>
 					<div class="tag">gallery</div>
 					<div class="tag">image</div>
-					
 					<div class="tag">audio</div>
 					<div class="tag">gallery</div>
 					<div class="tag">image</div>
-					
 					<div class="tag">audio</div>
 					<div class="tag">gallery</div>
 					<div class="tag">image</div>
 				</div>
-				<div class="newsletter">Newsletter</div>
-				<div class="news-content">Subscribe to Our Newsletter to get Important News, Amazing Offers.</div>
+				<div class="news news-md col-12">
+					<div class="news_title">Newsletter</div>
+					<div class="news_content">Subscribe to Our Newsletter to get Important News, Amazing Offers.</div>
+					<div class="subscribe clearfix">
+						<div class="subscribe_btn">Go</div>
+						<div class="subscribe_input"><input type="email" placeholder="Enter email"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col col-6 col-md-2">
+				<h3>Recent post</h3>
+				<div class="feed d-flex flex-wrap">
+					<img src="./img/footer.png" alt="">
+					<img src="./img/footer.png" alt="">
+					<img src="./img/footer.png" alt="">
+					<img src="./img/footer.png" alt="">
+					<img src="./img/footer.png" alt="">
+					<img src="./img/footer.png" alt="">
+				</div>
+			</div>
+			<div class="newsletter-xs news col-12">
+				<div class="news_title">Newsletter</div>
+				<div class="news_content">Subscribe to Our Newsletter to get Important News, Amazing Offers.</div>
 				<div class="subscribe clearfix">
 					<div class="subscribe_btn">Go</div>
 					<div class="subscribe_input"><input type="email" placeholder="Enter email"></div>
-				</div>
-			</div>
-			<div class="col col-2">
-				<h3>Recent post</h3>
-				<div class="feed d-flex flex-wrap">
-					<img src="./img/footer-img.png" alt="">
-					<img src="./img/footer-img.png" alt="">
-					<img src="./img/footer-img.png" alt="">
-					<img src="./img/footer-img.png" alt="">
-					<img src="./img/footer-img.png" alt="">
-					<img src="./img/footer-img.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -778,16 +845,16 @@
 
 
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
 
-        $('.company_tabs-captions .caption').click(function(){
+        $('.company_tabs-captions .caption').click(function () {
             var tab_id = $(this).attr('data-tab');
 
             $('.company_tabs-captions .caption').removeClass('current');
             $(this).addClass('current');
-	        
+
             $('.company_tabs_content').removeClass('current');
-            $("#"+tab_id).addClass('current');
+            $("#" + tab_id).addClass('current');
         })
 
     })

@@ -9,7 +9,7 @@
   h2 {
     color: $white;
   }
-  .comma {
+  .sign {
     align-items: center;
     margin-bottom: 45px;
   }
@@ -34,6 +34,11 @@
     margin-bottom: 26px;
   }
   .photo {
-    margin-bottom: 54px;
+    height: 165px;
+    width: 165px;
+    border: 3px solid $active-color;
+    border-radius: 50%;
+    box-shadow:  0px 0px 0px 8px rgba(25,232,198,0.2);
+    overflow: hidden;
   }
 }
