@@ -36,12 +36,12 @@
   ul {
     margin-bottom: 70px;
     li {
+      position: relative;
       font-size: 14px;
       font-weight: lighter;
       text-transform: capitalize;
       color: $white;
       margin-bottom: 10px;
-      list-style: url($img-path +"bird-design.png");
     }
   }
 

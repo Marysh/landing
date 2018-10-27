@@ -3,6 +3,9 @@
   padding-bottom: 100px;
   @media (max-width: 992px) {
     padding: 50px 0 50px 0;
+    .team {
+      margin-bottom: 10px;
+    }
   }
 
   h2 {
@@ -23,8 +26,20 @@
     }
   }
   .people_picture {
-    min-height: 228px;
+    height: 228px;
     overflow: hidden;
+    position: relative;
+    padding-top: 50%;
+    img {
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      bottom: 0;
+      right: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
     .info {

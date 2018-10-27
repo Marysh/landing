@@ -19,12 +19,16 @@
       font-size: 15px;
     }
   }
+  &_top-title {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
   &_icon {
     float: left;
   }
   &_title {
-    margin: 0 0 21px 50px;
-    padding-top: 7px;
+    margin: 0 0 0 20px;
     &:hover {
       color: $active-color;
       cursor: default;
