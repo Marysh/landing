@@ -56,7 +56,7 @@ h2 {
 
 /* line 41, E:/Mary/html/landing/First-landing/scss/_base.scss */
 .btn {
-  font-size: 13px;
+  font-size: 15px;
   min-width: 165px;
   border: none;
   border-top: 4px solid #ffffff !important;
@@ -64,54 +64,43 @@ h2 {
   color: #ffffff;
   padding-bottom: 20px;
   padding-top: 16px;
+  text-align: center;
 }
 
-/* line 50, E:/Mary/html/landing/First-landing/scss/_base.scss */
+/* line 51, E:/Mary/html/landing/First-landing/scss/_base.scss */
 .btn:hover {
   background-color: #108a72;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   /* line 41, E:/Mary/html/landing/First-landing/scss/_base.scss */
   .btn {
-    font-size: 10px;
+    font-size: 12px;
     min-width: 120px;
-    border: none;
-    border-top: 4px solid #ffffff !important;
-    background-color: #18cfab;
-    color: #ffffff;
-    padding-bottom: 14px;
-    padding-top: 8px;
+    padding: 15px 5px 15px 5px;
   }
 }
 
-@media (max-width: 992px) {
-  /* line 41, E:/Mary/html/landing/First-landing/scss/_base.scss */
-  .btn {
-    font-size: 13px;
-    min-width: 120px;
-    border: none;
-    border-top: 4px solid #ffffff !important;
-    background-color: #18cfab;
-    color: #ffffff;
-    padding-bottom: 14px;
-    padding-top: 8px;
-  }
-}
-
-/* line 75, E:/Mary/html/landing/First-landing/scss/_base.scss */
+/* line 61, E:/Mary/html/landing/First-landing/scss/_base.scss */
 .btn.btn-secondary {
-  font-size: 13px;
+  font-size: 15px;
   background-color: #00cbf6;
   color: #ffffff;
 }
 
-/* line 79, E:/Mary/html/landing/First-landing/scss/_base.scss */
+@media (max-width: 768px) {
+  /* line 61, E:/Mary/html/landing/First-landing/scss/_base.scss */
+  .btn.btn-secondary {
+    font-size: 12px;
+  }
+}
+
+/* line 68, E:/Mary/html/landing/First-landing/scss/_base.scss */
 .btn.btn-secondary:hover {
   background-color: #008caa;
 }
 
-/* line 85, E:/Mary/html/landing/First-landing/scss/_base.scss */
+/* line 75, E:/Mary/html/landing/First-landing/scss/_base.scss */
 hr {
   background-image: url(../img/double-line.png);
   background-repeat: no-repeat;
@@ -122,23 +111,23 @@ hr {
 }
 
 @media (max-width: 992px) {
-  /* line 85, E:/Mary/html/landing/First-landing/scss/_base.scss */
+  /* line 75, E:/Mary/html/landing/First-landing/scss/_base.scss */
   hr {
     margin-bottom: 30px;
   }
 }
 
-/* line 98, E:/Mary/html/landing/First-landing/scss/_base.scss */
+/* line 88, E:/Mary/html/landing/First-landing/scss/_base.scss */
 .styled-list {
   list-style: none;
 }
 
-/* line 100, E:/Mary/html/landing/First-landing/scss/_base.scss */
+/* line 90, E:/Mary/html/landing/First-landing/scss/_base.scss */
 .styled-list li {
   position: relative;
 }
 
-/* line 102, E:/Mary/html/landing/First-landing/scss/_base.scss */
+/* line 92, E:/Mary/html/landing/First-landing/scss/_base.scss */
 .styled-list li:before {
   content: "";
   position: absolute;
@@ -297,65 +286,86 @@ hr {
   }
 }
 
-/* line 48, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+/* line 49, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
 .company-features {
   width: 100%;
 }
 
-@media (max-width: 992px) {
-  /* line 48, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+@media (max-width: 768px) {
+  /* line 49, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
   .company-features {
     display: flex;
     flex-wrap: wrap;
   }
+  /* line 54, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+  .company-features .box {
+    padding: 70px 15px 25px 15px !important;
+  }
+  /* line 56, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+  .company-features .box:nth-child(1) {
+    order: 2;
+  }
+  /* line 59, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+  .company-features .box:nth-child(2) {
+    order: 1;
+  }
+  /* line 62, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+  .company-features .box_title {
+    font-size: 16px;
+  }
 }
 
-/* line 54, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+/* line 67, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
 .company-features .box {
-  padding: 230px 15px 60px 15px;
+  padding: 100px 15px 50px 15px;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
   border-top: 4px solid #18cfab;
   color: #18cfab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
   background-color: #1c2a33;
   background-repeat: no-repeat;
   background-position: center 110px;
 }
 
-/* line 65, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+/* line 82, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+.company-features .box_icon {
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+/* line 89, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
 .company-features .box:nth-child(even) {
   background-color: #18cfab;
   border-color: #ffffff;
   color: #ffffff;
 }
 
-/* line 70, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
-.company-features .box:nth-child(1) {
-  background-image: url("../img/feature-1.png");
+/* line 95, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+.company-features .box .icon-touch {
+  background-image: url("../img/icon-touch.png");
 }
 
-/* line 73, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
-.company-features .box:nth-child(2) {
-  background-image: url("../img/feature-2.png");
+/* line 98, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+.company-features .box .icon-diamond {
+  background-image: url("../img/icon-diamond.png");
 }
 
-/* line 76, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
-.company-features .box:nth-child(3) {
-  background-image: url("../img/feature-3.png");
+/* line 101, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+.company-features .box .icon-bulb {
+  background-image: url("../img/icon-bulb.png");
 }
 
-/* line 79, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
-.company-features .box:nth-child(4) {
-  background-image: url("../img/feature-4.png");
-}
-
-@media (max-width: 992px) {
-  /* line 54, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
-  .company-features .box {
-    padding: 230px 15px 60px 15px;
-    font-size: 16px;
-  }
+/* line 104, E:/Mary/html/landing/First-landing/scss/_first-screen.scss */
+.company-features .box .icon-device {
+  background-image: url("../img/icon-device.png");
 }
 
 /* line 1, E:/Mary/html/landing/First-landing/scss/_amazing-features.scss */
@@ -439,35 +449,36 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 35px;
   }
-  /* line 11, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+  /* line 12, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
   .about-our-company .company_tabs-captions .caption {
     float: none;
     flex-grow: 0;
   }
-  /* line 14, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+  /* line 15, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
   .about-our-company .company_tabs-captions .caption:nth-child(2) {
-    margin-left: 25px;
+    margin-left: 70px;
   }
-  /* line 17, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+  /* line 18, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
   .about-our-company .company_tabs-captions .caption:last-child {
-    margin-left: 50px;
+    margin-left: 200px;
   }
 }
 
-/* line 23, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 24, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .about-our-company h2 {
   color: #ffffff;
   text-transform: capitalize;
 }
 
-/* line 32, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 33, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .company_tabs-captions {
   padding-left: 15px;
   margin-bottom: 70px;
 }
 
-/* line 35, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 36, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .company_tabs-captions .caption {
   float: left;
   font-size: 16px;
@@ -478,34 +489,34 @@ hr {
   border-top: 3px solid transparent;
 }
 
-/* line 43, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 44, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .company_tabs-captions .caption.current {
   color: #18cfab;
   border-color: #18cfab;
 }
 
-/* line 47, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 48, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .company_tabs-captions .caption:not(:last-child) {
   margin-right: 28px;
 }
 
-/* line 53, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 54, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .company_tabs_content {
   display: none;
   color: #aeaeae;
 }
 
-/* line 56, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 57, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .company_tabs_content p {
   margin-bottom: 50px;
 }
 
-/* line 59, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 60, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .company_tabs_content.current {
   display: inherit;
 }
 
-/* line 62, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 63, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .company_tabs_content_pseudodiagram {
   width: 100%;
   font-size: 13px;
@@ -513,7 +524,7 @@ hr {
   color: #ffffff;
 }
 
-/* line 69, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 70, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .company_tabs_content ul li {
   font-size: 14px;
   font-weight: lighter;
@@ -522,7 +533,7 @@ hr {
   margin-bottom: 10px;
 }
 
-/* line 82, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 83, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .dia {
   height: 40px;
   border: 1px solid #959595;
@@ -531,7 +542,7 @@ hr {
   color: #ffffff;
 }
 
-/* line 90, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
+/* line 91, E:/Mary/html/landing/First-landing/scss/_about-our-company.scss */
 .dia-bg {
   height: 100%;
   padding-left: 18px;
@@ -910,16 +921,8 @@ hr {
 
 /* line 31, E:/Mary/html/landing/First-landing/scss/_everything-is-ready.scss */
 .everything-is-ready .btn-company {
-  height: 60px;
   border-top: 6px;
   cursor: pointer;
-}
-
-@media (max-width: 992px) {
-  /* line 31, E:/Mary/html/landing/First-landing/scss/_everything-is-ready.scss */
-  .everything-is-ready .btn-company {
-    height: 45px;
-  }
 }
 
 /* line 1, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
@@ -944,50 +947,62 @@ hr {
   .breaking-news .news_post-info {
     font-size: 12px;
   }
-  /* line 14, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+  /* line 12, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+  .breaking-news .news_post-info .author {
+    float: none;
+  }
+  /* line 17, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
   .breaking-news .fun-fact {
     flex-wrap: wrap;
   }
-  /* line 17, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+  /* line 19, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+  .breaking-news .fun-fact .box:nth-child(3) {
+    order: 4;
+  }
+  /* line 22, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+  .breaking-news .fun-fact .facts {
+    font-size: 14px;
+  }
+  /* line 26, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
   .breaking-news .number {
     font-size: 25px;
   }
 }
 
-/* line 22, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 31, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .breaking-news h2 {
   text-transform: capitalize;
   color: #4e4e4e;
 }
 
-/* line 29, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 38, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_line {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 70px;
 }
 
-/* line 34, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 43, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post {
   margin-bottom: 30px;
 }
 
-/* line 36, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 45, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post:hover {
   cursor: pointer;
 }
 
-/* line 38, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 47, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post:hover h3 {
   color: #18cfab;
 }
 
-/* line 41, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 50, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post:hover .news_post_box_date {
   background-color: #18cfab;
 }
 
-/* line 46, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 55, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post-description {
   background-color: #f8fcfe;
   min-height: 70px;
@@ -995,38 +1010,38 @@ hr {
   padding: 14px 16px 10px 16px;
 }
 
-/* line 52, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 61, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post-description h3 {
   margin-bottom: 15px;
 }
 
-/* line 56, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 65, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post-info {
   color: #777777;
   font-size: 14px;
 }
 
-/* line 61, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 70, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post-info .author {
   display: inline-block;
   float: left;
 }
 
-/* line 64, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 73, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post-info .author:not(:last-child) {
   padding-right: 18px;
   margin-right: 18px;
   border-right: 1px solid #777777;
 }
 
-/* line 72, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 81, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post_box {
   position: relative;
   overflow: hidden;
   padding-top: 100%;
 }
 
-/* line 76, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 85, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post_box img {
   width: 100%;
   position: absolute;
@@ -1038,7 +1053,7 @@ hr {
   transform: translate(-50%, -50%);
 }
 
-/* line 87, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 96, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .news_post_box_date {
   background-color: #203e38;
   width: 70px;
@@ -1052,92 +1067,97 @@ hr {
   top: 0;
 }
 
-/* line 104, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 113, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .fun-fact {
   width: 100%;
   background-color: #25333c;
 }
 
-/* line 109, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 119, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .fun-fact .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 60px;
-  position: relative;
   border-top: 7px solid #18cfab;
 }
 
-/* line 113, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
-.fun-fact .box:nth-child(1) .in-border {
+/* line 126, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+.fun-fact .box:nth-child(1) .in-box {
   background-image: url("../img/fun-bag.png");
 }
 
-/* line 116, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
-.fun-fact .box:nth-child(2) .in-border {
+/* line 129, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+.fun-fact .box:nth-child(2) .in-box {
   background-image: url("../img/fun-user.png");
 }
 
-/* line 119, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
-.fun-fact .box:nth-child(3) .in-border {
+/* line 132, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+.fun-fact .box:nth-child(3) .in-box {
   background-image: url("../img/fun-basket.png");
 }
 
-/* line 122, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
-.fun-fact .box:nth-child(4) .in-border {
+/* line 135, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+.fun-fact .box:nth-child(4) .in-box {
   background-image: url("../img/fun-place.png");
 }
 
-/* line 127, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
-.fun-fact .box .ex-border {
-  padding-top: 30px;
+/* line 140, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+.fun-fact .box .out-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 170px;
   border: 2px solid #18cfab;
   border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-/* line 135, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
-.fun-fact .box .in-border {
+/* line 150, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+.fun-fact .box .in-box {
   height: 110px;
   width: 110px;
   border-radius: 50%;
   background-color: #18cfab;
   background-repeat: no-repeat;
-  background-position: center 40px;
+  background-position: center;
 }
 
-/* line 147, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 160, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .fun-fact .box:nth-child(odd) {
   color: #18cfab;
 }
 
-/* line 151, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 164, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .fun-fact .box:nth-child(even) {
   background-color: #18cfab;
   border-top: 7px solid #25333c;
 }
 
-/* line 154, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 167, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .fun-fact .box:nth-child(even) .facts {
   color: #25333c;
 }
 
-/* line 157, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
-.fun-fact .box:nth-child(even) .ex-border {
+/* line 170, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+.fun-fact .box:nth-child(even) .out-box {
   border-color: #1c2a33;
 }
 
-/* line 160, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
-.fun-fact .box:nth-child(even) .in-border {
+/* line 173, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+.fun-fact .box:nth-child(even) .in-box {
   background-color: #1c2a33;
 }
 
-/* line 165, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 178, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .fun-fact .box .quantity {
-  position: absolute;
   bottom: 15px;
   text-align: center;
 }
 
-/* line 171, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 183, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .fun-fact .box .number {
   color: #ffffff;
   margin-bottom: 5px;
@@ -1145,17 +1165,10 @@ hr {
   text-align: center;
 }
 
-/* line 179, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
+/* line 191, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
 .fun-fact .box .facts {
   font-size: 18px;
   font-weight: lighter;
-}
-
-@media (max-width: 992px) {
-  /* line 179, E:/Mary/html/landing/First-landing/scss/_breaking-news.scss */
-  .fun-fact .box .facts {
-    font-size: 14px;
-  }
 }
 
 /* line 1, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
@@ -1168,9 +1181,19 @@ hr {
   .our-pricing-table {
     padding: 50px 0 50px 0;
   }
+  /* line 5, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+  .our-pricing-table .pricing_column .price {
+    min-height: 90px;
+    font-size: 30px;
+  }
 }
 
-/* line 8, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+/* line 11, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+.btn {
+  padding: 26px 5px 28px 5px;
+}
+
+/* line 15, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
 .pricing_column {
   background-color: #f8fcfe;
   width: 25%;
@@ -1181,36 +1204,36 @@ hr {
 }
 
 @media (max-width: 920px) {
-  /* line 8, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+  /* line 15, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
   .pricing_column {
     width: 50%;
   }
 }
 
-/* line 18, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+/* line 26, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
 .pricing_column:hover {
   cursor: pointer;
   box-shadow: 0px 0px 10px 4px #e7a61a;
   z-index: 3;
 }
 
-/* line 22, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+/* line 30, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
 .pricing_column:hover .pricing_title {
   color: #18cfab;
 }
 
-/* line 26, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+/* line 34, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
 .pricing_column:hover .btn {
   color: #ffffff;
   background-color: #18cfab;
 }
 
-/* line 30, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+/* line 38, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
 .pricing_column:hover .price {
   background-color: #18cfab;
 }
 
-/* line 35, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+/* line 43, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
 .pricing_column li {
   border: 1px solid #f8fcfe;
   min-height: 48px;
@@ -1218,7 +1241,7 @@ hr {
   padding: 23px 5px 12px 5px;
 }
 
-/* line 42, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+/* line 50, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
 .pricing_column .price {
   background-color: #2e4a5b;
   min-height: 108px;
@@ -1227,25 +1250,19 @@ hr {
   font-weight: bold;
 }
 
-/* line 48, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+/* line 56, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
 .pricing_column .price span {
   font-size: 14px;
   font-weight: lighter;
   text-transform: capitalize;
 }
 
-/* line 55, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
-.pricing_column .btn {
-  background-color: #2e4a5b;
-  padding: 26px 5px 28px 5px;
-}
-
-/* line 59, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+/* line 64, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
 .pricing_column .btn-price {
   margin: 10px 5px 10px 5px;
 }
 
-/* line 64, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
+/* line 69, E:/Mary/html/landing/First-landing/scss/_our-prising-table.scss */
 .pricing_title {
   min-height: 60px;
   font-size: 24px;
@@ -1545,9 +1562,10 @@ hr {
   border-top: none;
   text-transform: uppercase;
   box-shadow: 0 10px 0 0 #08bf9b;
+  background-color: #18cfab;
 }
 
-/* line 32, E:/Mary/html/landing/First-landing/scss/_keep-in-touch.scss */
+/* line 33, E:/Mary/html/landing/First-landing/scss/_keep-in-touch.scss */
 .keep-in-touch input {
   padding-left: 10px;
   border: 1px solid yellow;
@@ -1556,7 +1574,7 @@ hr {
   margin-bottom: 12px;
 }
 
-/* line 40, E:/Mary/html/landing/First-landing/scss/_keep-in-touch.scss */
+/* line 41, E:/Mary/html/landing/First-landing/scss/_keep-in-touch.scss */
 .keep-in-touch textarea {
   padding-left: 10px;
   border: 1px solid yellow;

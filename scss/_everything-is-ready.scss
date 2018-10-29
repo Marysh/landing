@@ -29,11 +29,7 @@
   }
 
   .btn-company {
-    height: 60px;
     border-top: 6px;
     cursor: pointer;
-    @media (max-width: 992px) {
-      height: 45px;
-    }
   }
 }

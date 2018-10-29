@@ -39,7 +39,7 @@ h2 {
 }
 
 .btn {
-  font-size: 13px;
+  font-size: 15px;
   min-width: 165px;
   border: none;
   border-top: 4px solid $white !important;
@@ -47,39 +47,29 @@ h2 {
   color: $white;
   padding-bottom: 20px;
   padding-top: 16px;
+  text-align: center;
   &:hover {
     background-color: darken($active-color,15%);
   }
-  @media (max-width: 576px) {
-    font-size: 10px;
+  @media (max-width: 768px) {
+    font-size: 12px;
     min-width: 120px;
-    border: none;
-    border-top: 4px solid $white !important;
-    background-color: $active-color;
-    color: $white;
-    padding-bottom: 14px;
-    padding-top: 8px;
+    padding: 15px 5px 15px 5px;
   }
 
-  @media (max-width: 992px) {
-    font-size: 13px;
-    min-width: 120px;
-    border: none;
-    border-top: 4px solid $white !important;
-    background-color: $active-color;
-    color: $white;
-    padding-bottom: 14px;
-    padding-top: 8px;
-  }
 }
 .btn.btn-secondary {
-  font-size: 13px;
+  font-size: 15px;
   background-color: $blue;
   color: $white;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
   &:hover {
     background-color: darken($blue,15%);
   }
 }
+
 
 
 hr {

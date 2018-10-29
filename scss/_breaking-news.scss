@@ -9,10 +9,19 @@
       }
       &-info {
         font-size: 12px;
+        .author {
+          float: none;
+        }
       }
     }
     .fun-fact {
       flex-wrap: wrap;
+      .box:nth-child(3){
+        order: 4;
+      }
+      .facts {
+        font-size: 14px;
+      }
     }
     .number {
       font-size: 25px;
@@ -106,41 +115,45 @@
   background-color: #25333c;
 
 
+
   .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-top: 60px;
-    position: relative;
     border-top: 7px solid $active-color;
-    &:nth-child(1) .in-border{
+    &:nth-child(1) .in-box{
        background-image: url($img-path + "fun-bag.png");
      }
-    &:nth-child(2) .in-border{
+    &:nth-child(2) .in-box{
       background-image: url($img-path + "fun-user.png");
     }
-    &:nth-child(3) .in-border{
+    &:nth-child(3) .in-box{
       background-image: url($img-path + "fun-basket.png");
     }
-    &:nth-child(4) .in-border{
+    &:nth-child(4) .in-box{
       background-image: url($img-path + "fun-place.png");
     }
 
 
-    .ex-border {
-      padding-top: 30px;
+    .out-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 170px;
       height: 170px;
       border: 2px solid $active-color;
       border-radius: 50%;
-
+      margin-bottom: 10px;
     }
-    .in-border {
+    .in-box {
       height: 110px;
       width: 110px;
       border-radius: 50%;
       background-color: $active-color;
       background-repeat: no-repeat;
-      background-position: center 40px;
-
-
+      background-position: center;
     }
 
 
@@ -154,16 +167,15 @@
       .facts {
         color: #25333c;
       }
-      .ex-border {
+      .out-box {
         border-color: $dark-blue;
       }
-      .in-border {
+      .in-box {
         background-color: $dark-blue;
       }
     }
 
     .quantity {
-      position: absolute;
       bottom: 15px;
       text-align: center;
     }
@@ -179,9 +191,6 @@
     .facts {
       font-size: 18px;
       font-weight: lighter;
-      @media (max-width: 992px) {
-        font-size: 14px;
-      }
     }
   }
 
