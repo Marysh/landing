@@ -14,19 +14,27 @@
       color: $active-color;
     }
   }
+@media (max-width: 768px) {
+  .feed {
+    img {
+      margin-right: 0;
+    }
+  }
 
+}
   .feed {
     overflow: hidden;
     img {
       margin-bottom: 10px;
-      &:nth-child(odd) {
-        margin-right: 10px;
-      }
     }
   }
   @media (min-width: 768px) {
     .newsletter-xs {
       display: none;
+    }
+    .feed img:nth-child(odd) {
+      }
+      margin-right: 10px;
     }
   }
 
@@ -198,4 +206,3 @@
     }
   }
 
-}
